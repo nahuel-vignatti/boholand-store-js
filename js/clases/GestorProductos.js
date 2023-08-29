@@ -71,7 +71,9 @@ class GestorProductos {
       const { nombre, precio, tipo, codigo, urlImg } = element; //desestructuramos el elemento
 
       contenedor.innerHTML = `<h3 class="fs-1">${nombre}</h3> 
+                              <div class="recuadro">
                               <img src="../img/${urlImg}" alt="" class="imgProducto" >                          
+                              </div>
                               <p>Precio: $${precio}</p> 
                               <p>Tipo: ${tipo}</p>`;
       contenedor.className = "producto";
@@ -101,6 +103,7 @@ class GestorProductos {
       fragment.appendChild(contenedor);
     });
     //agrego el fragmento al contenedor.
+    
     divCont.appendChild(fragment);
   }
 //=====================================================================//
