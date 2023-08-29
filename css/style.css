@@ -1,0 +1,339 @@
+/* 
+============================================================================================
+                                IMPORTANTE
+
+Este archivo de CSS fue creado con SASS durante el proyecto de desarrollo web, nada de esto
+fue desarrollado para el curso de JS pero ensamble los dos productos, para que este mas claro
+hice un archivo aparte que se llama stylejs.css (aunque se que lo ideal es tener todo en 1 solo
+archivo de CSS). Todo lo que esta en stylejs.css es el CSS que cree para el trabajo final de JS
+
+
+============================================================================================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+@font-face {
+  font-family: "brittany";
+  src: url("../fonts/BrittanySignature.ttf"); }
+
+.img_responsive, .pie__imagen, .imgcoleccion__producto__img, .inicio__imagen, .frase__imagen {
+  width: 100%;
+  height: auto; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  /*background-image: url("../multimedia/backgroundproyectofinal.png");
+    background-size:contain;*/
+  width: 100%;
+  border: solid #293731 4.5px;
+  overflow-x: hidden; }
+
+.fondo1 {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.fondo2 {
+  background-color: #f9f5f0;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 50%; }
+
+.barra__titulo {
+  font-family: brittany;
+  font-size: 5rem;
+  color: #293731; }
+  .barra__titulo .barra a {
+    font-size: 3rem; }
+  .barra__titulo .barra__titulo {
+    font-family: brittany;
+    font-size: 5rem;
+    color: #293731;
+    transform: translateX(-11px); }
+
+header nav ul {
+  width: 100%; }
+  header nav ul li {
+    width: 20%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem; }
+    header nav ul li .nav-link {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-transform: uppercase; }
+
+@media screen and (max-width: 768px) {
+  header nav ul li .nav-link {
+    font-size: 1.2rem; }
+  .barra__titulo {
+    font-size: 3rem;
+    transform: translateX(-7px); } }
+
+.pie {
+  font-size: 1rem;
+  margin-top: 10rem; }
+  .pie__imagen {
+    max-width: 8em;
+    margin-left: 1em; }
+  .pie__textos {
+    text-align: center; }
+    .pie__textos__frase {
+      font-family: brittany;
+      font-size: 3em; }
+    .pie__textos__firma {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.2em;
+      margin-top: 1.5em; }
+  .pie__redes {
+    margin-right: 1.5em; }
+    .pie__redes a:nth-child(1) {
+      margin-right: 2em; }
+    .pie__redes a:nth-child(2) {
+      margin-right: 2em; }
+    .pie__redes__iconos {
+      font-size: 3em;
+      color: black; }
+    .pie__redes__iconos:hover {
+      color: #434343; }
+
+@media screen and (max-width: 768px) {
+  .pie {
+    font-size: 0.8rem;
+    margin-top: 10rem; }
+    .pie__imagen {
+      margin-left: 0; }
+    .pie__textos {
+      margin-top: 1.5em; }
+    .pie__redes {
+      margin-right: 0; } }
+
+.textocoleccion {
+  font-size: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .textocoleccion__frase {
+    font-family: "Yeseva One", cursive;
+    font-size: 2.5em; }
+  .textocoleccion__linea {
+    width: 0.05rem;
+    height: 6rem;
+    background-color: #434343; }
+
+.imgcoleccion {
+  font-size: 1rem;
+  gap: 5%;
+  padding: 0% 10%; }
+  .imgcoleccion__producto {
+    margin-top: 5rem;
+    max-width: 30rem; }
+    .imgcoleccion__producto__img {
+      max-width: 30rem; }
+    .imgcoleccion__producto__num {
+      font-family: "Yeseva One", cursive;
+      font-size: 5em;
+      max-width: 2rem;
+      color: #434343;
+      position: relative;
+      transform: translate(585%, 60%); }
+    .imgcoleccion__producto__descripcion {
+      font-size: 1.6em;
+      font-family: "Montserrat", sans-serif; }
+
+@media screen and (max-width: 768px) {
+  .textocoleccion {
+    font-size: 0.8rem; }
+  .imgcoleccion__producto__descripcion {
+    font-size: 1.3em; } }
+
+@media screen and (max-width: 320px) {
+  .imgcoleccion__producto__num {
+    transform: translate(460%, 60%); } }
+
+.inicio {
+  margin-top: 5rem;
+  font-size: 1rem; }
+  .inicio__parrafo {
+    margin-top: 4em;
+    padding-left: 7em;
+    font-size: 1.5em; }
+    .inicio__parrafo__lineas {
+      font-family: "Yeseva One", cursive;
+      font-size: 2em;
+      text-align: right;
+      margin-right: 6rem; }
+  .inicio__imagen {
+    max-width: 50em;
+    margin-right: 10em; }
+
+.frase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 5rem 2rem;
+  font-size: 1rem; }
+  .frase__imagen {
+    max-width: 6em; }
+  .frase__titulo {
+    font-size: 3em;
+    margin-top: 2em;
+    font-family: "Montserrat", sans-serif; }
+  .frase__subtitulo {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif; }
+  .frase__parrafo {
+    font-family: "Yeseva One", cursive;
+    text-align: center;
+    font-size: 2.5em;
+    width: 75%;
+    color: #434343;
+    margin-bottom: 2.5em; }
+
+.materiales__hilos {
+  margin-top: 10rem;
+  font-size: 1rem; }
+  .materiales__hilos__carousel {
+    width: 25%; }
+  .materiales__hilos__texto {
+    padding-left: 3em;
+    width: 50%; }
+    .materiales__hilos__texto__titulo {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5em; }
+    .materiales__hilos__texto__linea {
+      width: 0.05rem;
+      height: 6rem;
+      background-color: #434343;
+      margin-left: 0.5em; }
+    .materiales__hilos__texto__descripcion {
+      font-family: "Yeseva One", cursive;
+      font-size: 2em;
+      margin-top: 1em; }
+
+@media screen and (max-width: 992px) {
+  .inicio {
+    font-size: 0.8rem; }
+    .inicio__parrafo__lineas {
+      margin-right: 4rem; }
+    .inicio__imagen {
+      margin-right: 10em; }
+  .frase {
+    font-size: 0.8rem; }
+  .materiales__hilos {
+    margin-top: 6rem;
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 768px) {
+  .inicio {
+    margin-top: 1rem; }
+    .inicio__imagen {
+      max-width: 35em;
+      margin-right: 10em; }
+  .materiales__hilos__carousel {
+    width: 40%; }
+  .materiales__hilos__texto {
+    margin-top: 2em;
+    padding-left: 0em; } }
+
+@media screen and (max-width: 576px) {
+  .inicio {
+    font-size: 0.6rem; }
+    .inicio__imagen {
+      max-width: 30em;
+      margin-right: 10em; }
+  .frase {
+    margin: 3rem 2rem;
+    font-size: 0.6rem; }
+    .frase__imagen {
+      max-width: 6em; }
+  .materiales__hilos {
+    margin-top: 10rem;
+    font-size: 0.7rem; }
+    .materiales__hilos__texto__titulo {
+      font-size: 1.5em; }
+    .materiales__hilos__texto__descripcion {
+      font-size: 1.5em; } }
+
+.contacto {
+  font-size: 1rem;
+  width: 70%;
+  margin-top: 5rem; }
+  .contacto__titulo {
+    font-family: "Yeseva One", cursive;
+    font-size: 4em; }
+  .contacto__texto {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.5em; }
+  .contacto__informacion__items {
+    font-family: "Montserrat", sans-serif; }
+  .contacto__formulario__input {
+    margin-top: 2em;
+    width: 100%;
+    height: 2.5em;
+    border: 3px solid #434343;
+    font-size: 1.5em; }
+  .contacto__formulario__consulta {
+    margin-top: 3em;
+    width: 100%;
+    border: 3px solid #434343;
+    font-size: 1.5em; }
+  .contacto__formulario__boton {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1em;
+    width: 7em;
+    height: 2.2em;
+    font-size: 1.5em;
+    border: 3px solid #434343; }
+
+@media screen and (max-width: 576px) {
+  .contacto {
+    font-size: 0.8rem; } }
+
+.nosotros {
+  margin-top: 5rem;
+  font-size: 1rem; }
+  .nosotros__descripcion {
+    padding-right: 10em;
+    padding-left: 7em;
+    padding-top: 3em; }
+    .nosotros__descripcion__linea {
+      width: 15em;
+      height: 1px;
+      background-color: #434343;
+      position: absolute;
+      transform: translate(-100%, 2em); }
+    .nosotros__descripcion__titulo {
+      font-family: "Yeseva One", cursive;
+      font-size: 3em;
+      z-index: 20; }
+    .nosotros__descripcion__texto {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5em; }
+
+@media screen and (max-width: 768px) {
+  .nosotros {
+    margin-top: 3; }
+    .nosotros__descripcion__linea {
+      display: none; }
+    .nosotros__descripcion__titulo {
+      font-size: 2em; }
+    .nosotros__descripcion__texto {
+      font-size: 1.2em; } }

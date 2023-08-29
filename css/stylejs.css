@@ -1,0 +1,183 @@
+/* ========================================================================
+                            IMPORTANTE
+
+    Este es el archivo de CSS correspondiente al TP Final de JS.
+
+   ======================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+  font-family: "brittany";
+  src: url("../fonts/BrittanySignature.ttf"); }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #f9f5f0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.fondo1 {
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0; }
+  
+  .fondo2 {
+    background-color: #f9f5f0;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 50%; }
+  
+.titulo_principal{
+    font-family: brittany;
+    color: #212529;
+    font-size: 5rem;
+
+}
+.subtitulo{
+    font-family: "Montserrat", sans-serif;
+    color: #212529;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.titulo_productos{
+    font-size: 4rem;
+}
+.link{
+    color: #212529;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+.boton{
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color:#dbba94;
+    color: whitesmoke;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.botonFiltro{
+    font-size: 1rem;
+    width: 30rem;
+    text-align: center;
+}
+.boton:hover{
+    
+    box-shadow: 2px 2px 6px #535353, 2px 2px 6px #535353;
+}
+.boton_carrito{
+    margin: 0 25%;
+}
+.btnEliminar{
+    font-size: 1.2rem;
+}
+.boton_carrito{
+    height: 4rem;
+}
+
+#iconoCarrito{
+    font-size: 3rem;
+    color: #dbba94;
+}
+#badgeCarrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    font-size: 1rem;
+    background-color: #000 !important;
+}
+.texto{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+}
+.fila{
+    width: 90%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Con flex wrap, cuando se agreguen mas de 3 productos van bajando a la fila siguiente */
+    gap: 2rem;
+}
+.producto{
+    font-family: "Yeseva One", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #212529;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 2px solid #212529;
+    border-radius: 1rem;
+    width: 30%;
+    height: 45rem;
+    
+}
+.productoCarrito{
+    color: #212529;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #212529;
+    border-radius: 1rem;
+    width: 90%;
+    height: auto;
+}
+.titulo_prod_carrito{
+    font-size: 1.5rem;
+}
+.descripcion_prod_carrito{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+.tostada{
+    color: rgba(0, 0, 0, 0.801);
+}
+p{
+    font-size: 1.5rem;
+}
+
+.filtro{
+    font-size: 1.5rem;
+}
+.imgProducto{
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    max-height: 25rem;
+}
+.imgCarrito{
+    width: 100%;
+    height: auto;
+    
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

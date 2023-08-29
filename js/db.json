@@ -1,0 +1,14 @@
+[
+  { "nombre": "Chakra", "precio": 1500, "tipo": "Colgante", "codigo": "C1" , "urlImg": "chakra.webp"},
+  { "nombre": "Astas", "precio": 7500, "tipo": "Tapiz", "codigo": "T1" , "urlImg": "astamacrame.png"},
+  { "nombre": "Camino Grande", "precio": 3000, "tipo": "Mesa", "codigo": "M1" , "urlImg": "camino1.jpg"},
+  { "nombre": "Tapiz Grande", "precio": 5000, "tipo": "Tapiz", "codigo": "T2" , "urlImg": "tapizmacrame.png"},
+  { "nombre": "Centro de Mesa","precio": 2000,"tipo": "Mesa","codigo": "M2" , "urlImg": "centromesa1.jpeg"},
+  { "nombre": "Camino Corto", "precio": 1970, "tipo": "Mesa", "codigo": "M3" , "urlImg": "camino2.webp"},
+  { "nombre": "Tapiz Chico", "precio": 3850, "tipo": "Tapiz", "codigo": "T3" , "urlImg": "tapiz2.jpg"},
+  { "nombre": "Centro de Mesa chico","precio": 2000,"tipo": "Mesa","codigo": "M3" , "urlImg": "centromesa.webp"},
+  { "nombre": "Camino XXL", "precio": 6000, "tipo": "Mesa", "codigo": "M4" , "urlImg": "camino3.webp"},
+  { "nombre": "Tapiz Mediano", "precio": 4200, "tipo": "Tapiz", "codigo": "T4" , "urlImg": "tapiz3.webp"},
+  { "nombre": "Porta Maceta","precio": 3500,"tipo": "Colgante","codigo": "P1", "urlImg": "porta.jpg"},
+  { "nombre": "Porta Maceta Largo","precio": 5000,"tipo": "Colgante","codigo": "P2", "urlImg": "porta2.jpg"}
+]

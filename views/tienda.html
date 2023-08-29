@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ====================== IMPORTANTE =============================== -->
+  <!-- Este es el archivo HTML correspondiente al proyecto final del curso de JS -->
+  <!-- ================================================================= -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+    content="MACRAME, HILOS, DECORACION, HOME, DECO, TEXTIL, BOHO, ESTILO BOHO"/>
+  <meta name="description"
+    content="Boholand deco home brinda textiles deco para tu hogar, trabajamos con fibras y géneros naturales inspirados en decoración Boho. Utilizamos hilos de algodón y yute, telas 100% algodón como tusor y lino. Así como también maderas de deriva recolectadas de la naturaleza. " />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/stylejs.css" />
+    <title>Boholand | Tienda</title>
+  </head>
+  <body>
+    <!-- Estos DIV vacios son para el fondo de dos colores partido a la mitad y responsive -->
+    <div class="fondo1"></div>
+    <div class="fondo2"></div>
+    <!-- Header del sitio, programado para Desarrollo web y ensamblado con el final de JS -->
+    <header class="barra w-100">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid justify-content-between">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-fill align-items-center align-content-center" >
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coleccion.html">Colección</a>
+              </li>
+              <li><h1 class="barra__titulo mt-4">Boholand</h1></li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quienessomos.html">Quienes Somos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./tienda.html">Tienda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin de Header del sitio -->
+
+    <div class="main__section d-flex flex-column align-items-center">
+      <h3 class="mt-5 mb-3 subtitulo">Bienvenido a nuestra Tienda online</h3>
+
+      <h3 id="fechaAcceso" class="subtitulo mt-3 mb-5"></h3>
+      <!-- Dropdown que contiene los filtros -->
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <div class="opciones row justify-content-center">
+            <div class="opciones_orden d-flex flex-column align-items-center col-6">
+              <div class="d-flex flex-column">
+                <!-- Estos son los Radio Button que ordenan la lista -->
+                <label for="alfabeticamente" class="filtro">
+                  <input type="radio" name="orden" id="alfabeticamente" />
+                  Alfabeticamente</label>
+                <label for="menorPrecio" class="filtro">
+                  <input type="radio" name="orden" id="menorPrecio" /> Menor
+                  Precio</label>
+                <label for="mayorPrecio" class="filtro">
+                  <input type="radio" name="orden" id="mayorPrecio" /> Mayor
+                  Precio</label>
+              </div>
+              <button class="boton mt-3 mb-5" id="btnOrdenar">Ordenar</button>
+            </div>
+            <div class="opciones_filtrado d-flex flex-column align-items-center col-6" >
+              <div class="d-flex flex-column">
+                <!-- Estos son los Radio Button que filtran la lista -->
+                <label for="tapizFiltro" class="filtro">
+                  <input type="radio" name="filtro" id="tapizFiltro"/>
+                  Tapiz
+                </label>
+                <label for="colganteFiltro" class="filtro">
+                  <input type="radio" name="filtro" id="colganteFiltro" />
+                  Colgante</label>
+                <label for="mesaFiltro" class="filtro">
+                  <input type="radio" name="filtro" id="mesaFiltro" />
+                  Mesa</label>
+              </div>
+              <button class="boton mt-3 mb-5" id="btnFiltrar">Filtrar</button>
+            </div>
+            <div class="col-4">
+              <button class="boton mt-3 mb-5" id="btnReset">Borrar Filtros</button>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <nav class="navbar">
+        <div class="container-fluid">
+          <h5
+            class="navbar-toggler fs-3 boton botonFiltro p-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            Ordenar // Filtrar
+          </h5>
+        </div>
+      </nav>
+      <!-- Fin del Dropdown que contiene los filtros -->
+
+      <div class="row mt-5 justify-content-around align-items-center">
+        <div class="col-10">
+          <h3 class="titulo_productos texto">Productos</h3>
+        </div>
+        <!-- Imagen del carrito de compras -->
+        <div class="col-2">
+          <a
+            data-bs-toggle="offcanvas"
+            href="#offcanvasCarrito"
+            role="button"
+            aria-controls="offcanvasCarrito">
+            <i
+              class="fa-solid fa-cart-shopping position-relative"
+              id="iconoCarrito">
+              <span 
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="badgeCarrito">0 </span>
+            </i>
+          </a>
+        </div>
+        <!-- Fin imagen del carrito de compras -->
+      </div>
+
+      <!-- Contenedor principal que es donde vamos a agregar dinamicamente con JS los productos -->
+      <div class="fila" id="divcontenedor"></div> 
+
+      <!-- Comienza el offcanvas que contiene todos los productos del carrito -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasCarrito"
+        aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fs-2 texto" id="offcanvasLabel">Carrito de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- #carritoBody es el cuerpo del offcanvas donde vamos a ir agregando y viendo los productos del carrito -->
+        <div class="offcanvas-body" id="carritoBody"></div>
+
+        <!-- Estos son los h3 que nos van a mostrar la cantidad de productos y el total de la compra -->
+        <h3 id="cantProdu" class="fs-3 p-3 border-top border-secondary border-2 texto"></h3>
+        <h3 id="sumatoria" class="fs-3 p-3 border-top border-bottom border-secondary border-2 texto"></h3>
+
+        <div class="mx-auto">
+          <!-- botones del fondo del carrito -->
+          <button class="boton boton_carrito mx-auto mb-3" id="vaciarCarrito">Vaciar Carrito</button>
+          <button class="boton boton_carrito mx-auto mb-3" id="comprarCarrito">Comprar </i></button>
+        </div>
+      </div>
+      <!-- Fin del offcanvas del carrito -->
+    </div>
+
+    <!-- FOOTER DEL SITIO, programado para el proyecto de Desarrollo web -->
+    <footer class="pie d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+      <a href="../index.html"
+        ><img
+          class="pie__imagen"
+          src="../multimedia/rope.png"
+          alt="soga macrame"
+      /></a>
+
+      <section class="pie__textos">
+        <h3 class="pie__textos__frase">A collection of things we love</h3>
+        <h6 class="pie__textos__firma">Design by Abb websites</h6>
+      </section>
+      <section class="pie__redes">
+        <a href="https://www.instagram.com"
+          ><i class="bi bi-instagram pie__redes__iconos"></i
+        ></a>
+        <a href="https://www.facebook.com"
+          ><i class="bi bi-facebook pie__redes__iconos"></i
+        ></a>
+        <a href="https://www.whatsapp.com"
+          ><i class="bi bi-whatsapp pie__redes__iconos"></i
+        ></a>
+      </section>
+    </footer>
+    <!-- FOOTER DEL SITIO, programado para el proyecto de Desarrollo web -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/clases/producto.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/clases/GestorProductos.js"></script>
+  </body>
+</html>
